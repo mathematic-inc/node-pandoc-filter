@@ -1,0 +1,377 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`deemph tests should verify deemph filter is valid 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "c": Array [
+        1,
+        Array [
+          "a-special-header",
+          Array [],
+          Array [],
+        ],
+        Array [
+          Object {
+            "c": "A",
+            "t": "Str",
+          },
+          Object {
+            "t": "Space",
+          },
+          Object {
+            "c": Array [
+              Object {
+                "c": "SPECIAL",
+                "t": "Str",
+              },
+            ],
+            "t": "Emph",
+          },
+          Object {
+            "t": "Space",
+          },
+          Object {
+            "c": "header",
+            "t": "Str",
+          },
+        ],
+      ],
+      "t": "Header",
+    },
+    Object {
+      "c": Array [
+        Object {
+          "c": "The",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "quick",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": Array [
+            Object {
+              "c": "BROWN",
+              "t": "Str",
+            },
+          ],
+          "t": "Emph",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "fox",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "jumped.",
+          "t": "Str",
+        },
+      ],
+      "t": "Para",
+    },
+    Object {
+      "c": Array [
+        Object {
+          "c": "The",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": Array [
+            Object {
+              "c": "quick",
+              "t": "Str",
+            },
+            Object {
+              "t": "Space",
+            },
+            Object {
+              "c": Array [
+                Object {
+                  "c": "BROWN",
+                  "t": "Str",
+                },
+              ],
+              "t": "Emph",
+            },
+            Object {
+              "t": "Space",
+            },
+            Object {
+              "c": "fox",
+              "t": "Str",
+            },
+          ],
+          "t": "Strong",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "jumped.",
+          "t": "Str",
+        },
+      ],
+      "t": "Para",
+    },
+    Object {
+      "c": Array [
+        Array [
+          Object {
+            "c": Array [
+              Object {
+                "c": "Buy",
+                "t": "Str",
+              },
+              Object {
+                "t": "Space",
+              },
+              Object {
+                "c": Array [
+                  Object {
+                    "c": "MILK",
+                    "t": "Str",
+                  },
+                ],
+                "t": "Emph",
+              },
+            ],
+            "t": "Plain",
+          },
+        ],
+        Array [
+          Object {
+            "c": Array [
+              Object {
+                "c": "Eat",
+                "t": "Str",
+              },
+              Object {
+                "t": "Space",
+              },
+              Object {
+                "c": Array [
+                  Object {
+                    "c": "COOKIES",
+                    "t": "Str",
+                  },
+                ],
+                "t": "Emph",
+              },
+            ],
+            "t": "Plain",
+          },
+        ],
+      ],
+      "t": "BulletList",
+    },
+  ],
+  "meta": Object {},
+  "pandoc-api-version": Array [
+    1,
+    22,
+  ],
+}
+`;
+
+exports[`deemph tests should verify initially compiled AST has not changed 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "c": Array [
+        1,
+        Array [
+          "a-special-header",
+          Array [],
+          Array [],
+        ],
+        Array [
+          Object {
+            "c": "A",
+            "t": "Str",
+          },
+          Object {
+            "t": "Space",
+          },
+          Object {
+            "c": Array [
+              Object {
+                "c": "special",
+                "t": "Str",
+              },
+            ],
+            "t": "Emph",
+          },
+          Object {
+            "t": "Space",
+          },
+          Object {
+            "c": "header",
+            "t": "Str",
+          },
+        ],
+      ],
+      "t": "Header",
+    },
+    Object {
+      "c": Array [
+        Object {
+          "c": "The",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "quick",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": Array [
+            Object {
+              "c": "brown",
+              "t": "Str",
+            },
+          ],
+          "t": "Emph",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "fox",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "jumped.",
+          "t": "Str",
+        },
+      ],
+      "t": "Para",
+    },
+    Object {
+      "c": Array [
+        Object {
+          "c": "The",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": Array [
+            Object {
+              "c": "quick",
+              "t": "Str",
+            },
+            Object {
+              "t": "Space",
+            },
+            Object {
+              "c": Array [
+                Object {
+                  "c": "brown",
+                  "t": "Str",
+                },
+              ],
+              "t": "Emph",
+            },
+            Object {
+              "t": "Space",
+            },
+            Object {
+              "c": "fox",
+              "t": "Str",
+            },
+          ],
+          "t": "Strong",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "jumped.",
+          "t": "Str",
+        },
+      ],
+      "t": "Para",
+    },
+    Object {
+      "c": Array [
+        Array [
+          Object {
+            "c": Array [
+              Object {
+                "c": "Buy",
+                "t": "Str",
+              },
+              Object {
+                "t": "Space",
+              },
+              Object {
+                "c": Array [
+                  Object {
+                    "c": "milk",
+                    "t": "Str",
+                  },
+                ],
+                "t": "Emph",
+              },
+            ],
+            "t": "Plain",
+          },
+        ],
+        Array [
+          Object {
+            "c": Array [
+              Object {
+                "c": "Eat",
+                "t": "Str",
+              },
+              Object {
+                "t": "Space",
+              },
+              Object {
+                "c": Array [
+                  Object {
+                    "c": "cookies",
+                    "t": "Str",
+                  },
+                ],
+                "t": "Emph",
+              },
+            ],
+            "t": "Plain",
+          },
+        ],
+      ],
+      "t": "BulletList",
+    },
+  ],
+  "meta": Object {},
+  "pandoc-api-version": Array [
+    1,
+    22,
+  ],
+}
+`;

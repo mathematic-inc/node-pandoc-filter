@@ -1,0 +1,16 @@
+{
+  "version": "0.1",
+  "language": "en",
+  "words": ["pandoc", "inlines", "delim", "promisable", "builtins"],
+  "ignorePaths": ["coverage", "dist", "lib", "baselines", "tests/data", "*.config.*"],
+  "dictionaries": [
+    "en_US",
+    "softwareTerms",
+    "node",
+    "typescript",
+    "latex",
+    "npm",
+    "misc",
+    "filetypes"
+  ]
+}

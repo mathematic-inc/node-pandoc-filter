@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`deflist tests should verify deflist filter is valid 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "c": Array [
+        Array [
+          Object {
+            "c": Array [
+              Object {
+                "c": "a",
+                "t": "Str",
+              },
+              Object {
+                "t": "Space",
+              },
+              Object {
+                "c": "yellow",
+                "t": "Str",
+              },
+              Object {
+                "t": "Space",
+              },
+              Object {
+                "c": "fruit",
+                "t": "Str",
+              },
+              Object {
+                "t": "SoftBreak",
+              },
+              Object {
+                "c": "carrot",
+                "t": "Str",
+              },
+            ],
+            "t": "Plain",
+          },
+          Object {
+            "c": Array [
+              Object {
+                "c": "an",
+                "t": "Str",
+              },
+              Object {
+                "t": "Space",
+              },
+              Object {
+                "c": "orange",
+                "t": "Str",
+              },
+              Object {
+                "t": "Space",
+              },
+              Object {
+                "c": "veggie",
+                "t": "Str",
+              },
+            ],
+            "t": "Plain",
+          },
+        ],
+        Array [
+          Object {
+            "c": Array [
+              Object {
+                "c": Array [
+                  Object {
+                    "c": "banana",
+                    "t": "Str",
+                  },
+                ],
+                "t": "Strong",
+              },
+            ],
+            "t": "Para",
+          },
+        ],
+      ],
+      "t": "BulletList",
+    },
+  ],
+  "meta": Object {},
+  "pandoc-api-version": Array [
+    1,
+    22,
+  ],
+}
+`;
+
+exports[`deflist tests should verify initially compiled AST has not changed 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "c": Array [
+        Array [
+          Array [
+            Object {
+              "c": "banana",
+              "t": "Str",
+            },
+          ],
+          Array [
+            Array [
+              Object {
+                "c": Array [
+                  Object {
+                    "c": "a",
+                    "t": "Str",
+                  },
+                  Object {
+                    "t": "Space",
+                  },
+                  Object {
+                    "c": "yellow",
+                    "t": "Str",
+                  },
+                  Object {
+                    "t": "Space",
+                  },
+                  Object {
+                    "c": "fruit",
+                    "t": "Str",
+                  },
+                  Object {
+                    "t": "SoftBreak",
+                  },
+                  Object {
+                    "c": "carrot",
+                    "t": "Str",
+                  },
+                ],
+                "t": "Plain",
+              },
+            ],
+            Array [
+              Object {
+                "c": Array [
+                  Object {
+                    "c": "an",
+                    "t": "Str",
+                  },
+                  Object {
+                    "t": "Space",
+                  },
+                  Object {
+                    "c": "orange",
+                    "t": "Str",
+                  },
+                  Object {
+                    "t": "Space",
+                  },
+                  Object {
+                    "c": "veggie",
+                    "t": "Str",
+                  },
+                ],
+                "t": "Plain",
+              },
+            ],
+          ],
+        ],
+      ],
+      "t": "DefinitionList",
+    },
+  ],
+  "meta": Object {},
+  "pandoc-api-version": Array [
+    1,
+    22,
+  ],
+}
+`;

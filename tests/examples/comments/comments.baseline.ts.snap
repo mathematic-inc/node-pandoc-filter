@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`comments tests should verify comments filter is valid 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "c": Array [
+        Object {
+          "c": "Hello",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "world.",
+          "t": "Str",
+        },
+      ],
+      "t": "Para",
+    },
+    Object {
+      "c": Array [
+        Object {
+          "c": "The",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "end",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "is",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "coming.",
+          "t": "Str",
+        },
+      ],
+      "t": "Para",
+    },
+  ],
+  "meta": Object {},
+  "pandoc-api-version": Array [
+    1,
+    22,
+  ],
+}
+`;
+
+exports[`comments tests should verify initially compiled AST has not changed 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "c": Array [
+        Object {
+          "c": "Hello",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "world.",
+          "t": "Str",
+        },
+      ],
+      "t": "Para",
+    },
+    Object {
+      "c": Array [
+        "html",
+        "<!-- BEGIN COMMENT -->",
+      ],
+      "t": "RawBlock",
+    },
+    Object {
+      "c": Array [
+        Object {
+          "c": "Content",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "here",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "will",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "be",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "removed.",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": ":)",
+          "t": "Str",
+        },
+      ],
+      "t": "Para",
+    },
+    Object {
+      "c": Array [
+        "html",
+        "<!-- END COMMENT -->",
+      ],
+      "t": "RawBlock",
+    },
+    Object {
+      "c": Array [
+        Object {
+          "c": "The",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "end",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "is",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "coming.",
+          "t": "Str",
+        },
+      ],
+      "t": "Para",
+    },
+  ],
+  "meta": Object {},
+  "pandoc-api-version": Array [
+    1,
+    22,
+  ],
+}
+`;

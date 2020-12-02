@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`caps tests should verify caps filter is valid 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "c": Array [
+        Object {
+          "c": "HELLO",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "WORLD.",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "MY",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "NAME",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "IS",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "JOHN.",
+          "t": "Str",
+        },
+      ],
+      "t": "Para",
+    },
+  ],
+  "meta": Object {},
+  "pandoc-api-version": Array [
+    1,
+    22,
+  ],
+}
+`;
+
+exports[`caps tests should verify initially compiled AST has not changed 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "c": Array [
+        Object {
+          "c": "Hello",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "World.",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "My",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "name",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "is",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "John.",
+          "t": "Str",
+        },
+      ],
+      "t": "Para",
+    },
+  ],
+  "meta": Object {},
+  "pandoc-api-version": Array [
+    1,
+    22,
+  ],
+}
+`;

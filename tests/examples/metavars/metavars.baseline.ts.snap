@@ -1,0 +1,312 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`metavars tests should verify initially compiled AST has not changed 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "c": Array [
+        Object {
+          "c": "%{foo}",
+          "t": "Str",
+        },
+      ],
+      "t": "Para",
+    },
+    Object {
+      "c": Array [
+        Object {
+          "c": "Hello",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "%{foo}",
+          "t": "Str",
+        },
+      ],
+      "t": "Para",
+    },
+    Object {
+      "c": Array [
+        Object {
+          "c": Array [
+            Object {
+              "c": "%{msg}",
+              "t": "Str",
+            },
+          ],
+          "t": "Para",
+        },
+      ],
+      "t": "BlockQuote",
+    },
+  ],
+  "meta": Object {
+    "foo": Object {
+      "c": Array [
+        Object {
+          "c": "bar",
+          "t": "Str",
+        },
+      ],
+      "t": "MetaInlines",
+    },
+    "msg": Object {
+      "c": Array [
+        Object {
+          "c": "the",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": Array [
+            Object {
+              "c": "quick",
+              "t": "Str",
+            },
+            Object {
+              "t": "Space",
+            },
+            Object {
+              "c": Array [
+                Object {
+                  "c": "brown",
+                  "t": "Str",
+                },
+              ],
+              "t": "Strong",
+            },
+            Object {
+              "t": "Space",
+            },
+            Object {
+              "c": "fox",
+              "t": "Str",
+            },
+          ],
+          "t": "Emph",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "jumped",
+          "t": "Str",
+        },
+      ],
+      "t": "MetaInlines",
+    },
+  },
+  "pandoc-api-version": Array [
+    1,
+    22,
+  ],
+}
+`;
+
+exports[`metavars tests should verify metavars filter is valid 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "c": Array [
+        Object {
+          "c": Array [
+            Array [
+              "",
+              Array [
+                "interpolated",
+              ],
+              Array [
+                Array [
+                  "field",
+                  "foo",
+                ],
+              ],
+            ],
+            Array [
+              Object {
+                "c": "bar",
+                "t": "Str",
+              },
+            ],
+          ],
+          "t": "Span",
+        },
+      ],
+      "t": "Para",
+    },
+    Object {
+      "c": Array [
+        Object {
+          "c": "Hello",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": Array [
+            Array [
+              "",
+              Array [
+                "interpolated",
+              ],
+              Array [
+                Array [
+                  "field",
+                  "foo",
+                ],
+              ],
+            ],
+            Array [
+              Object {
+                "c": "bar",
+                "t": "Str",
+              },
+            ],
+          ],
+          "t": "Span",
+        },
+      ],
+      "t": "Para",
+    },
+    Object {
+      "c": Array [
+        Object {
+          "c": Array [
+            Object {
+              "c": Array [
+                Array [
+                  "",
+                  Array [
+                    "interpolated",
+                  ],
+                  Array [
+                    Array [
+                      "field",
+                      "msg",
+                    ],
+                  ],
+                ],
+                Array [
+                  Object {
+                    "c": "the",
+                    "t": "Str",
+                  },
+                  Object {
+                    "t": "Space",
+                  },
+                  Object {
+                    "c": Array [
+                      Object {
+                        "c": "quick",
+                        "t": "Str",
+                      },
+                      Object {
+                        "t": "Space",
+                      },
+                      Object {
+                        "c": Array [
+                          Object {
+                            "c": "brown",
+                            "t": "Str",
+                          },
+                        ],
+                        "t": "Strong",
+                      },
+                      Object {
+                        "t": "Space",
+                      },
+                      Object {
+                        "c": "fox",
+                        "t": "Str",
+                      },
+                    ],
+                    "t": "Emph",
+                  },
+                  Object {
+                    "t": "Space",
+                  },
+                  Object {
+                    "c": "jumped",
+                    "t": "Str",
+                  },
+                ],
+              ],
+              "t": "Span",
+            },
+          ],
+          "t": "Para",
+        },
+      ],
+      "t": "BlockQuote",
+    },
+  ],
+  "meta": Object {
+    "foo": Object {
+      "c": Array [
+        Object {
+          "c": "bar",
+          "t": "Str",
+        },
+      ],
+      "t": "MetaInlines",
+    },
+    "msg": Object {
+      "c": Array [
+        Object {
+          "c": "the",
+          "t": "Str",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": Array [
+            Object {
+              "c": "quick",
+              "t": "Str",
+            },
+            Object {
+              "t": "Space",
+            },
+            Object {
+              "c": Array [
+                Object {
+                  "c": "brown",
+                  "t": "Str",
+                },
+              ],
+              "t": "Strong",
+            },
+            Object {
+              "t": "Space",
+            },
+            Object {
+              "c": "fox",
+              "t": "Str",
+            },
+          ],
+          "t": "Emph",
+        },
+        Object {
+          "t": "Space",
+        },
+        Object {
+          "c": "jumped",
+          "t": "Str",
+        },
+      ],
+      "t": "MetaInlines",
+    },
+  },
+  "pandoc-api-version": Array [
+    1,
+    22,
+  ],
+}
+`;

@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`async tests should verify async filter is valid 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "c": Array [
+        Object {
+          "c": "02178",
+          "t": "Str",
+        },
+      ],
+      "t": "Para",
+    },
+  ],
+  "meta": Object {},
+  "pandoc-api-version": Array [
+    1,
+    22,
+  ],
+}
+`;
+
+exports[`async tests should verify initially compiled AST has not changed 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "c": Array [
+        Object {
+          "c": "http://api.zippopotam.us/us/ma/belmont",
+          "t": "Str",
+        },
+      ],
+      "t": "Para",
+    },
+  ],
+  "meta": Object {},
+  "pandoc-api-version": Array [
+    1,
+    22,
+  ],
+}
+`;
