@@ -70,7 +70,10 @@ export const InlineMath = nodeCreatorFactory(NodeType.InlineMath, 0);
 export const SingleQuote = nodeCreatorFactory(NodeType.SingleQuote, 0);
 export const DoubleQuote = nodeCreatorFactory(NodeType.DoubleQuote, 0);
 
-// Pseudo nodes - These aren't real nodes in the AST, but they are unique structures.
+// **************************************************************************************** //
+// ** PSEUDO NODES - These aren't real nodes in the AST, but they are unique structures. ** //
+// **************************************************************************************** //
+
 type CitationParams = {
   id: string;
   prefix: InlineNode[];
@@ -99,3 +102,7 @@ interface AttrParams {
 export const Attr = ({ id = "", classes = [], attributes = {} }: AttrParams): Attributes => {
   return [id, classes, Object.entries(attributes)];
 };
+
+// ************************* //
+// ** END OF PSEUDO NODES ** //
+// ************************* //

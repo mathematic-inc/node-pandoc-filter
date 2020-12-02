@@ -40,6 +40,14 @@ npm install -g node-pandoc-filter
 
 ## Getting Started
 
+This package comes with two entry points:
+
+- [`node-pandoc-filter/nodes`](https://mu-io.github.io/node-pandoc-filter/modules/_nodes_index_.html):
+  This is where all nodes (e.g. `Str`) and node-like creators (e.g. `Attr`) are imported from.
+- [`node-pandoc-filter`](https://mu-io.github.io/node-pandoc-filter/modules/_index_.html): Everything else.
+
+> The `Math` node is renamed to `Formula` as to not conflict with the internal `Math` object in JavaScript.
+
 As stated previously, Pandoc filters are executable scripts, so you must use a
 [hashbang](https://github.com/tc39/proposal-hashbang) at the top of each filter, targeting the
 specific method of execution. For example, `#!/usr/bin/env node`.
@@ -54,7 +62,8 @@ specific method of execution. For example, `#!/usr/bin/env node`.
 
 ```javascript
 #!/usr/bin/env node
-const { toJSONFilter, Str } = require("node-pandoc-filter");
+const { Str } = require("node-pandoc-filter/nodes");
+const { toJSONFilter } = require("node-pandoc-filter");
 const requestPromise = require("request-promise-native");
 
 toJSONFilter({
@@ -69,7 +78,8 @@ toJSONFilter({
 
 ```typescript
 #!/usr/bin/env ts-node-script
-import { toJSONFilter, Str } from "pandoc-filter";
+import { Str } from "node-pandoc-filter/nodes";
+import { toJSONFilter } from "node-pandoc-filter";
 import itFilters from "../utils/it-filters";
 
 toJSONFilter({

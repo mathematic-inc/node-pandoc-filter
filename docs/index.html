@@ -109,6 +109,15 @@
 				<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
 					<h2>Getting Started</h2>
 				</a>
+				<p>This package comes with two entry points:</p>
+				<ul>
+					<li><a href="https://mu-io.github.io/node-pandoc-filter/modules/_nodes_index_.html"><code>node-pandoc-filter/nodes</code></a>:
+					This is where all nodes (e.g. <code>Str</code>) and node-like creators (e.g. <code>Attr</code>) are imported from.</li>
+					<li><a href="https://mu-io.github.io/node-pandoc-filter/modules/_index_.html"><code>node-pandoc-filter</code></a>: Everything else.</li>
+				</ul>
+				<blockquote>
+					<p>The <code>Math</code> node is renamed to <code>Formula</code> as to not conflict with the internal <code>Math</code> object in JavaScript.</p>
+				</blockquote>
 				<p>As stated previously, Pandoc filters are executable scripts, so you must use a
 					<a href="https://github.com/tc39/proposal-hashbang">hashbang</a> at the top of each filter, targeting the
 				specific method of execution. For example, <code>#!/usr/bin/env node</code>.</p>
@@ -124,7 +133,8 @@
 					<h3>JavaScript</h3>
 				</a>
 				<pre><code class="language-javascript"><span class="hljs-meta">#!/usr/bin/env node</span>
-<span class="hljs-keyword">const</span> { toJSONFilter, Str } = <span class="hljs-built_in">require</span>(<span class="hljs-string">"node-pandoc-filter"</span>);
+<span class="hljs-keyword">const</span> { Str } = <span class="hljs-built_in">require</span>(<span class="hljs-string">"node-pandoc-filter/nodes"</span>);
+<span class="hljs-keyword">const</span> { toJSONFilter } = <span class="hljs-built_in">require</span>(<span class="hljs-string">"node-pandoc-filter"</span>);
 <span class="hljs-keyword">const</span> requestPromise = <span class="hljs-built_in">require</span>(<span class="hljs-string">"request-promise-native"</span>);
 
 toJSONFilter({
@@ -137,7 +147,8 @@ toJSONFilter({
 					<h3>TypeScript</h3>
 				</a>
 				<pre><code class="language-typescript">#!<span class="hljs-regexp">/usr/</span>bin/env ts-node-script
-<span class="hljs-keyword">import</span> { toJSONFilter, Str } <span class="hljs-keyword">from</span> <span class="hljs-string">"pandoc-filter"</span>;
+<span class="hljs-keyword">import</span> { Str } <span class="hljs-keyword">from</span> <span class="hljs-string">"node-pandoc-filter/nodes"</span>;
+<span class="hljs-keyword">import</span> { toJSONFilter } <span class="hljs-keyword">from</span> <span class="hljs-string">"node-pandoc-filter"</span>;
 <span class="hljs-keyword">import</span> itFilters <span class="hljs-keyword">from</span> <span class="hljs-string">"../utils/it-filters"</span>;
 
 toJSONFilter({

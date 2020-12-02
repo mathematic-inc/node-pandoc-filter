@@ -34,7 +34,7 @@
 		]
 	},
 	"scripts": {
-		"docs": "typedoc --out docs --mode library ./src/index.ts ./src/nodes/index.ts ",
+		"docs": "typedoc --out docs --gitRevision main --mode library ./src/index.ts ./src/nodes/index.ts ",
 		"build": "tsc -b tsconfig.build.json",
 		"clean": "yarn clean:ts && yarn clean:artifacts",
 		"clean:artifacts": "scripts/clean-artifacts.sh",
