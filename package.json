@@ -1,10 +1,10 @@
 {
 	"name": "node-pandoc-filter",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Node.js Pandoc Filtering",
 	"license": "MIT",
-	"repository": "jun-sheaf/node-pandoc-filter",
-	"bugs": "https://github.com/jun-sheaf/node-pandoc-filter/issues",
+	"repository": "mu-io/node-pandoc-filter",
+	"bugs": "https://github.com/mu-io/node-pandoc-filter/issues",
 	"author": "jun-sheaf",
 	"engines": {
 		"node": ">=10"
