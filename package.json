@@ -1,6 +1,6 @@
 {
 	"name": "node-pandoc-filter",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Node.js Pandoc Filtering",
 	"license": "MIT",
 	"repository": "mu-io/node-pandoc-filter",
@@ -9,19 +9,20 @@
 	"engines": {
 		"node": ">=10"
 	},
-	"main": "lib/index.js",
+	"main": "lib/index.ts",
 	"directories": {
 		"lib": "lib",
 		"test": "tests",
 		"example": "tests/examples",
 		"doc": "docs"
 	},
-	"files": [
-		"lib"
-	],
 	"publishConfig": {
 		"access": "public"
 	},
+	"private": true,
+	"workspaces": [
+		"./lib"
+	],
 	"husky": {
 		"hooks": {
 			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
@@ -36,6 +37,7 @@
 	"scripts": {
 		"docs": "typedoc --out docs --gitRevision main --mode library ./src/index.ts ./src/nodes/index.ts ",
 		"build": "tsc -b tsconfig.build.json",
+		"postbuild": "scripts/copy-assets.ts",
 		"clean": "yarn clean:ts && yarn clean:artifacts",
 		"clean:artifacts": "scripts/clean-artifacts.sh",
 		"clean:ts": "tsc -b tsconfig.build.json --clean",
