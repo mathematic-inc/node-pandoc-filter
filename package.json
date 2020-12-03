@@ -41,7 +41,7 @@
 		"clean": "yarn clean:ts && yarn clean:artifacts",
 		"clean:artifacts": "scripts/clean-artifacts.sh",
 		"clean:ts": "tsc -b tsconfig.build.json --clean",
-		"lint:spelling": "cspell --config=./.cspellrc.json \"{src,test}/**/*.{md,ts,js}\"",
+		"lint:spelling": "cspell --config=./.cspellrc.json \"{src,tests,scripts}/**/*.{md,ts,js}\"",
 		"lint:es": "eslint --ext .js,.ts ./src",
 		"lint:ts": "tsc -p tsconfig.json --noEmit",
 		"test": "jest --coverage --verbose",
