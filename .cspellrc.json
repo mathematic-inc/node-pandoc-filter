@@ -2,7 +2,6 @@
   "version": "0.1",
   "language": "en",
   "words": ["pandoc", "inlines", "delim", "promisable", "builtins", "deemph", "deflist", "metavars"],
-  "ignorePaths": ["coverage", "dist", "lib", "baselines", "tests/data", "*.config.*"],
   "dictionaries": [
     "en_US",
     "softwareTerms",
